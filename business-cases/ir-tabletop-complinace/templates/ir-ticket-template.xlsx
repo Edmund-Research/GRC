@@ -1,0 +1,19 @@
+| Column Header                            | Description / Example                                                         |
+| ---------------------------------------- | ----------------------------------------------------------------------------- |
+| **Ticket ID**                            | Unique identifier (e.g., IR-2025-001)                                         |
+| **Date/Time Detected**                   | Timestamp when the SOC first saw the alert (e.g., 2025-05-09 09:15 UTC)       |
+| **Reported By**                          | Person or system (e.g., “IDS”, “John Doe, SOC Analyst”)                       |
+| **Incident Type**                        | Category (e.g., Ransomware, Data Exfiltration, Unauthorized Access)           |
+| **Incident Description**                 | Brief summary of what happened                                                |
+| **Affected Systems**                     | Hostnames, IPs, applications involved                                         |
+| **Severity (e.g., CVSS)**                | Rating (e.g., High / Critical / CVSS 8.7)                                     |
+| **Initial Triage Summary**               | Analyst’s first findings and hypothesis                                       |
+| **Containment Actions**                  | Steps taken to isolate or block (e.g., “Disabled user account”; “Seg’d VLAN”) |
+| **Eradication Actions**                  | How malware or attacker artifacts were removed (e.g., “Wiped & rebuilt VM”)   |
+| **Recovery Actions**                     | Restoration steps (e.g., “Restored from backup dated …”)                      |
+| **Notification Status**                  | Internal or external notifications (e.g., “GDPR Art.33 draft sent”)           |
+| **Next Steps / Recommendations**         | What remains to be done (e.g., “Rotate creds”, “Strengthen firewall rules”)   |
+| **Owner / Assignee**                     | Who is responsible for follow-up                                              |
+| **Current Status**                       | Open / In Progress / Closed                                                   |
+| **SLA Targets (Detect/Contain/Recover)** | e.g., “Detect <1 hr; Contain <4 hr; Recover <24 hr”                           |
+| **Playbook Reference (Section)**         | Link to IR playbook or section ID (e.g., “NIST SP 800-61r2 §3.2.1”)           |

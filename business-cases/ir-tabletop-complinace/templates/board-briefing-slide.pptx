@@ -1,0 +1,62 @@
+**Ransomware Incident Drill: Executive Summary**
+
+---
+
+### 1. Incident Overview
+
+* **Date & Time (T+0):** IDS alert at 09:15 UTC
+* **Scope:** “DB-FR-01” ransomware + exfiltration of \~10 k EU customer records
+
+---
+
+### 2. Key Metrics
+
+| Metric                       | Value          | Target / Threshold | Status    |
+| ---------------------------- | -------------- | ------------------ | --------- |
+| Time to Detect (MTTD)        | 2 hrs          | ≤1 hr              | 🔶 Yellow |
+| Time to Contain              | 4 hrs          | ≤4 hrs             | 🟢 Green  |
+| Records Exfiltrated          | 10,000         | 0                  | 🔴 Red    |
+| GDPR Notification Sent (T+x) | T+48 hrs draft | ≤72 hrs            | 🟢 Green  |
+
+● Include a small sparkline or RAG icon next to each metric.
+
+---
+
+### 3. Timeline & Milestones
+
+A horizontal swim-lane graphic showing:
+
+* **T+0:** Detection
+* **T+1:** Backup alert
+* **T+2:** Ransom note
+* **T+24:** Forensics / exfiltration finds
+* **T+48:** GDPR draft sent
+* **T+72:** Final notification to regulator
+
+---
+
+### 4. Top Findings & Risks
+
+* **Delayed lateral-movement detection** → increases dwell time
+* **Unpatched critical vulns (7 > threshold 5)**
+* **Threat intel coverage only 72% vs 80% target**
+
+---
+
+### 5. Recommendations & Decisions Needed
+
+1. **Automate IR playbook:** Integrate SIEM alerts → orchestration
+2. **Accelerate patching SLA:** Target ≤15 days for critical CVEs
+3. **Expand threat intel feeds** to hit ≥80% coverage
+4. **Approve budget** for IR tooling and staff training
+
+---
+
+### Design Tips
+
+* **Keep text minimal:** 4–6 bullet points per section
+* **Use consistent icons/colors:** RAG status (🟢🟡🔴)
+* **Visualize metrics:** small bar/sparkline charts where possible
+* **One “ask” box:** highlight any approvals or funding requests
+
+By populating your slide with these sections—clear metrics up top, a concise timeline, highlighted risks, and calls to action—you’ll give the board exactly what they need to know in < 5 minutes.

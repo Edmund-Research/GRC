@@ -1,0 +1,7 @@
+Time (hrs),Inject ID,Description,Facilitator Notes
+0,G0,"IDS alert: Multiple SMB connections from DB-FR-01 to unknown external IP; user reports database slow/unresponsive.","SOC Analyst: Triage and decide on escalation"
+1,G1,"Backup monitoring alert: Unusual file rename operations in backup share.","Guide discussion toward containment options"
+2,G2,"Ransom note on DB-FR-01: 'Your files are encrypted… contact x@y.com.'","Trigger eradication planning and malware analysis"
+8,G3,"External threat intel: Similar ransomware variant targeting EU financial services.","Assess scope and need for external notification"
+24,G4,"Forensics report: ~10,000 EU customer records encrypted and exfiltrated.","Legal Counsel: Draft GDPR notification (Art. 33)"
+48,G5,"Regulator requests clarification on measures taken.","PR/Legal: Finalize and send notification; prepare board memo"

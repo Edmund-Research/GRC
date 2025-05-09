@@ -1,0 +1,98 @@
+### 1. Title Slide
+
+* **Title:** After-Action Review – Ransomware Tabletop Drill
+* **Subtitle:** NIST CSF & GDPR Exercise | \[Date]
+* **Facilitator / Author:** \[Your Name / Team]
+
+---
+
+### 2. Exercise Overview
+
+* **Objective:** Test IR playbook vs. NIST CSF and GDPR timelines
+* **Scope:** Ransomware on EU database (DB-FR-01), data exfiltration of \~10k PII records
+* **Participants:** SOC, IR Lead, Legal, PR, Business Owner, CISO
+
+---
+
+### 3. Timeline Recap
+
+* A **swimlane** or horizontal timeline graphic showing key injects and actions at:
+
+  * T+0: Detection alert
+  * T+1: Backup alert
+  * T+2: Ransom note
+  * T+8: External intel
+  * T+24: Forensics report & GDPR trigger
+  * T+48: GDPR draft sent
+  * T+72: Expected notification deadline
+
+---
+
+### 4. Key Findings
+
+| Finding                                    | Impact Level | Control / Reg. Reference | Notes                 |
+| ------------------------------------------ | ------------ | ------------------------ | --------------------- |
+| Delayed lateral-move detection             | High         | NIST DE.DP-4             | IDS rules need tuning |
+| Unpatched critical vulnerabilities (7 > 5) | High         | NIST PR.IP-12            | Patch process gaps    |
+| Threat intel coverage at 72% vs 80% target | Medium       | NIST RS.AN-5             | Expand intel sources  |
+
+*(Use RAG colors or icons next to each row)*
+
+---
+
+### 5. Control & Regulation Mapping
+
+* A **matrix** mapping each top finding to the relevant NIST CSF function/sub-category and the GDPR article (33/34) it tests.
+* Example table:
+
+  | Finding                        | NIST CSF Category  | Specific Sub-Category | GDPR Article |
+  | ------------------------------ | ------------------ | --------------------- | ------------ |
+  | Lateral movement detection lag | Detect (DE.DP-4)   | Continuous monitoring | 33           |
+  | Patch gaps                     | Protect (PR.IP-12) | Configuration mgmt    | —            |
+  | Intel coverage shortfall       | Respond (RS.AN-5)  | Analysis              | 34           |
+
+---
+
+### 6. Root-Cause Analysis
+
+* **Fishbone** or bullet list of underlying causes for each finding:
+
+  * E.g., “No automated SIEM alert for internal SMB traffic”
+  * “Patching exceptions process not enforced”
+
+---
+
+### 7. POAM Snapshot
+
+* **Screenshot** or recreated chart of your POAM dashboard (from `aar/POAM-dashboard.png`) showing:
+
+  * Finding
+  * Risk rating
+  * Owner
+  * Target completion
+  * Status (RAG)
+
+---
+
+### 8. Recommendations
+
+* **Top 3–5 action items**, each with owner and target date.
+
+  1. Automate lateral-move detection rules (SOC Manager; 30 Jun)
+  2. Enforce patch exceptions policy (IT Ops; 15 Jul)
+  3. Integrate 2 new threat-intel feeds (IR Lead; 01 Aug)
+  4. Update GDPR notification template (Legal; 10 Jun)
+
+---
+
+### 9. Lessons Learned & Next Steps
+
+* **What went well:** e.g., rapid containment decision, clear role assignments.
+* **Opportunities:** e.g., streamline notification approvals, improve forensic tool usage.
+* **Next Steps:** schedule full-scale drill, update playbooks, train staff.
+
+---
+
+### 10. Appendix (Optional)
+
+* Detailed logs, full inject list, raw anonymized timeline data.
